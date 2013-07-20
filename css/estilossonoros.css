@@ -1,0 +1,666 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	background:transparent; 
+	font-weight:normal;
+}
+
+body {
+	line-height:1;
+}
+body {
+	background-attachment: fixed;
+	background-image:url(../img/12633_1_other_music.jpg);
+	background-repeat: no-repeat;
+	font-family:Helvetica, Arial, Sans-serif;
+	font-size: 16px;
+}
+
+@font-face {
+font-family:'museo-sans-1';
+src:url('fonts/museosans_500-webfont.eot');
+src:local('☺'), url('fonts/museosans_500-webfont.woff') format('woff'), url('fonts/museosans_500-webfont.ttf') format('truetype'), url('fonts/museosans_500-webfont.svg#webfont6kY1IVGu') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+
+@font-face {
+font-family:'Museo_Slab_100';
+src:url('fonts/Museo_Slab_100-webfont.eot');
+src:local('☺'), url('fonts/Museo_Slab_100-webfont.woff') format('woff'), url('fonts/Museo_Slab_100-webfont.ttf') format('truetype'), url('fonts/Museo_Slab_100-webfont.svg#webfont6kY1IVGu') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+
+@font-face {
+font-family:'league-gothic-1';
+src:url('fonts/League_Gothic-webfont.eot');
+src:local('☺'), url('fonts/League_Gothic-webfont.woff') format('woff'), url('fonts/League_Gothic-webfont.ttf') format('truetype'), url('fonts/League_Gothic-webfont.svg#webfontOTINA1xY') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+
+@font-face {
+font-family:'calluna';
+src:url('fonts/calluna-regular-webfont.eot');
+src:local('☺'), url('fonts/calluna-regular-webfont.woff') format('woff'), url('fonts/calluna-regular-webfont.ttf') format('truetype'), url('fonts/calluna-regular-webfont.svg#webfonts6RMrQrn') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+
+h1 {
+	font-family: calluna;
+	font-size: 30px;
+}
+
+h2 {
+	font-family: league-gothic-1;
+	font-size: 20px;
+	margin: 10px 0 0 1em;
+}
+
+h3 {
+	font-family: league-gothic-1;
+	font-size: 1.5em;	
+	text-transform: uppercase;
+
+}
+
+h4 {
+	font-family: league-gothic-1;
+	font-size: 1.2em;	
+}
+
+ol, ul, li {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	background:transparent;
+	font-weight:normal;
+	list-style:none;
+	font-family: museo-sans-1;
+}
+a {
+	text-decoration: none;
+}
+/* Menu navegacion desplegable */
+
+/* nav {
+	_display:none;
+	background:#0092bf;
+	color:#fff;
+	cursor:pointer;
+	left:10px;
+	margin:0;
+	max-width:176px;
+	min-width:180px;
+	overflow:hidden;
+	padding:0;
+	position: relative;
+	text-align:center;
+	top:0px;
+	z-index:1000;
+}
+nav #navmenu {
+	display:none;
+}
+nav:hover #navmenu {
+	display:block;
+}
+nav:hover #navhdr {
+	display:none;
+}
+nav h2 {
+	display:block;
+	width:180px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: museo-sans-1;
+	font-size: 15px;
+}
+nav ul {
+	text-align:left;
+	width:176px;
+}
+nav a {
+	color:#fff;
+	display:block;
+	padding:6px 0 4px 16px;
+	font-style:normal;
+}
+nav a:hover, nav a:focus {
+	background:#f14a29;
+	outline:0;
+} */
+
+/* Div que "envuelve" al centro la pagina */
+
+#variabletest {
+	position: fixed;
+	top: 20%;
+	right: 0;
+	float: right;
+	background-color: #E0B014;
+	width: 30%;
+	margin: 2%;
+	z-index: 10000;
+}
+
+#variabletest p {
+	margin: 2%;
+	padding: 2%;
+	font-size: 0.8em;	
+	color: white;
+	background-color: #2453C9;
+}
+
+/* #wrapper {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	height: auto;
+	border: 3px solid red;
+	padding: 10px 0 0 0;
+}*/
+
+#contenido {
+	position: relative;
+	margin: 0 auto;
+	/* background-color: #F0D084;*/
+	background: rgb(240, 208, 132);
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	width: 1000px;
+	border: 3px solid lightgray; 
+	z-index: 10;
+}
+/* estilos del encabezado */ 
+
+#main-header {
+	background: rgb(240, 208, 132);
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	height: 70px;
+	margin: 0 auto;
+	width: 1000px;
+	min-width: 1000px;
+	border: 3px solid lightgray;
+}
+
+#main-header-admin {
+	-moz-opacity: 0.8;
+	background: rgb(240, 208, 132);
+	border: 3px solid lightgray;
+	filter:alpha(opacity=8);
+	height: 70px;
+	margin: 2% auto 0 auto;
+	opacity: 0.8;
+	width: 1000px;
+}
+
+#centrar-contenido-header {
+	height: 70px;
+	margin: 0 auto;
+	min-width: 1000px;
+	width: 1000px;
+}
+
+#logo {
+	display: inline-block;
+	height: 40px;
+	width: 300px;
+	vertical-align: top;
+	padding: 10px 10px 10px 10px;
+}
+
+#logo img {
+	width: 100%; 
+}
+
+#campoDeBusqueda {
+	float: right;
+	height: 40px;
+	text-align: center;
+	vertical-align: top;
+	width: 40%;
+	/* padding: 0 0 0 0; */
+	/* background-image: url(../images/discos.jpg);
+	background-repeat: no-repeat;
+	background-position: right center; */
+}
+
+#campoDeBusqueda p, label {
+	color: black;
+	font-size: 0.8em;
+}
+
+/* #contenedorSeccionAside {
+	display: inline-block;
+	vertical-align: top;
+} */
+
+section, aside {
+	margin: 0;
+}
+
+.contenedorSeccion1 { 
+	border: 1px solid lightgray; 
+	display: inline-block;
+	margin: 0;
+	vertical-align: top;
+	width: 80%;
+}
+
+.contenedorSeccion1, .contenedorSeccion2 p {
+	font-size: 0.9em;
+}
+
+.contenedorSeccion2 {
+	border: 1px solid lightgray;
+	display: inline-block;
+	margin: 0;
+	vertical-align: top;
+	width: 100%;
+}
+
+#asideFunciones {
+	background-color: #F0D084;
+	border: 1px solid lightgray; 
+	float: right; 
+	height: 100%;
+	margin: 0;
+	vertical-align: top;
+	width: 19.2%;
+}
+
+#footerPlasticos {
+	-moz-opacity: 0.8;
+	background: rgb(240, 208, 132);
+	border: 3px solid lightgray; 
+	filter:alpha(opacity=8);
+	height: 200px;
+	margin: 0 auto;
+	min-width: 1000px;
+	opacity: 0.8;
+	text-align: center;
+	width: 1000px;
+}
+
+#cargando {
+	/* background-image: url(../images/ajax-loader.gif); */
+	float: left;
+	padding: 5px;
+	position: relative;
+	right: 50px;
+	top: 10px;
+	z-index: 999;
+}
+
+#cargando img {
+	width: 100%;
+}
+
+.contenedorBordes {
+	/* background-image: url(../images/Vinilos_distintos_tamaños.jpg);
+	background-position: center no-repeat; */
+	background-color: white;
+	border-radius: 0.5em;
+	/* color: #333; */
+	margin: 10px 10px;
+	padding: 1em 0;
+}
+
+.contenedorBordes p {
+	font-size: 0.9em;
+}
+
+#contenedorCanasta {
+	padding: 3%;
+}
+
+.vistaProductos {
+	display: inline-block;
+	width: 150px;
+	/* height: 200px; */
+	margin: 15px;
+	vertical-align: top;
+}
+.caratula {
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+.caratula img {
+	width: 100%;
+}
+
+.detallepromo {
+	margin: 0 auto; 
+}
+
+.detallepromo p {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+.centrarBotones {
+	/* width: 70px; */
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.sinEntradaPalabra, .resultados {
+	font-size: 0.8em;
+	margin: 0.1em 0 0 1em;
+}
+
+
+.sinEntradaPalabra {
+	color: red;
+	font-weight: bold;
+}
+
+#centraCarrito {
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+}
+
+#centraCarrito img {
+	width: 100%;
+}
+
+#estadoCarrito p {
+	text-align: center;
+	padding: 1% 0 1% 0;
+	font-size: 0.9em;
+}
+
+.boldspan {
+	font-weight: bold;
+}
+
+#productoDetalle div {
+	display: inline-block;
+}
+
+#caratulaDetalle {
+	width: 205px;
+	height: 205px;
+	margin: 15px;
+	vertical-align: top;
+	border: 1px solid;
+}
+
+#caratulaDetalle img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+#detallesDisco {
+	top: 0;
+	float: left;
+}
+
+#listaDetalles {
+	margin: 15px 0 0 0;
+	vertical-align: top;
+	width: 60%;
+	/* border: 1px solid black; */
+}
+
+.detalleTexto {
+	font-size: 0.9em;
+	/* padding: 0.09em 0 0.09em 0;*/
+}
+
+#reseniaProducto {
+	padding: 2% 2% 2% 2%;
+	text-align: justify;
+}
+
+#contenedorLista {
+	padding: 2% 2% 2% 2%;
+	text-align: justify;
+}
+
+#tablaCanciones {
+	background-color: #fff;
+	border: 1px solid black;
+	empty-cells: show;
+	font-size: 90%;
+	margin: 0 0 20px 0;
+	padding: 4px;
+	text-align: left;
+	width: 100%;
+}
+
+
+#tablaCanciones caption {
+	color: #777;
+	margin: 0 0 5px 0;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#tablaCanciones thead th {
+	border: 0;
+	border-bottom: 1px solid #ddd;
+	color: #777;
+	font-size: 90%;
+	padding: 3px 0;
+	margin: 0 0 5px 0;
+	text-align: left;
+}
+
+#tablaCanciones tbody tr.odd {
+	background-color: #F0DDAF;
+}
+
+#tablaCanciones tbody tr.even {
+	background-color: #fff;
+}
+
+#tablaCanciones tbody tr:hover {
+	background-color: #ffe08e;
+}	
+
+#tablaCanciones tbody td {
+	color: #888;
+	padding: 2px;
+	border: 0;
+}
+
+#tablaCanciones tbody tr:hover td {
+	color: #444;
+}
+
+.centrarCelda {
+	text-align: center;
+}
+
+.derechaCelda {
+	text-align: right;
+}
+
+.contenedorForma form, p {
+	margin: 2%;
+}
+
+#formalogin input {
+ 	display: block;
+ 	width: 175px;
+ 	float: left;
+ 	margin-bottom: 10px;
+}
+
+#formalogin label {
+	display: block;
+ 	text-align: right;
+ 	float: left; 
+ 	width: 75px;
+ 	padding-right: 20px;
+ 	font-size: 0.9em;
+}
+
+/* .checkbox {
+ width: 1em;
+} */
+
+#formalogin br {
+ 	clear: left;
+}
+
+.btnEnviar {
+ 	width: 75px;
+ 	margin-left: 95px;
+}
+
+.formaRegistro table {
+	border-collapse: collapse;
+ 	color: black;
+ 	border: 1px solid black;
+}
+    
+.formaRegistro th {
+ 	width: 200px;
+ 	text-align: right;
+ 	vertical-align: top;
+	border-top: 1px solid black;
+ 	font-family: Verdana;
+ 	font-size: 0.7em;
+ 	padding-right: 12px;
+ 	padding-top: 0.75em;
+ 	padding-bottom: 0.75em;
+}
+    
+.formaRegistro td {
+	vertical-align: middle;
+ 	background-color: black;
+ 	border-bottom: 1px solid white;
+ 	color: white;
+ 	border-left: 4px solid gray;
+ 	padding: 4px;
+ 	font-family: Verdana;
+ 	font-size: .7em;
+ 	/* background-image: url(title-glass.png); */
+ 	background-repeat: repeat-x;
+ 	background-position: 50%;
+}
+    
+.requerido {
+ 	color: red;
+}
+    
+.encbezado th {
+ 	text-align: left;
+ 	text-transform: uppercase;
+ 	font-size: .9em;
+ 	padding-left: 220px;
+ 	border-bottom: 2px solid gray;
+ 	border-top: 2px solid black;
+}
+    
+    
+.btnEnviarRegistro {
+ 	margin-left: 220px;
+ 	margin-top: 4px;
+}
+
+.errorLetra {
+	color: red;
+}
+
+#contenedorLogin {
+	max-width: 400px;
+	padding: 10% 0 0 0;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+.loginLogo {
+	/* padding: 10px;
+	width: 100px;
+	height: 100px; */
+	margin: 0 auto;
+	padding: 0 10% 0 10%;
+}
+
+.loginLogo img {
+	width: 100%;
+}
+
+#formaLoginTexto {
+	padding: 0 25% 0 25%;
+}
+
+.centraForma {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.centraForma label, p {
+	font-size: 0.8em;
+}
+
+.centraForma p {
+	text-align: center;
+}
+
+.columnaBusqueda {
+	margin: 1% 2% 1% 2%;
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+}
+
+
+#finalizacion {
+	width: 400px;
+	background-color: white;
+	border: 2px gray solid;
+	padding: 15px;
+}	
+
+#errorVentanaModal {
+	/* visibility: hidden; */
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 100000;
+	background-image: url(../img/fondo_modal.png);
+}
+
+#errorVentanaModal div {
+	margin: 20% auto;
+}
+
+.preventaSpan {
+	background-color: red;
+	color: white;
+}
+
+.promocionSpan {
+	background-color: #365A9C;
+	color: white;
+}
+
+#contenedorFormularioContacto {
+	margin: 10px 2% 10px 2%;
+}
+

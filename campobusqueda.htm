@@ -1,0 +1,13 @@
+        <div id="campoDeBusqueda">
+  <?php if (isset($_SESSION['loggedUser'])) { ?>
+          <p>Sesion Iniciada Usuario: <span class="boldspan"><?php echo $_SESSION['loggedUser']['nombreUsuario']; ?></span>
+          	 <a href="<?php echo $target_link5; ?>">(Cerrar Sesión)</a></p>	
+  <?php } else { ?>     
+          <p>Sesion No Iniciada</span></p>	
+  <?php } ?>        
+          <form id="formaBusqueda" name="formaBusqueda" method="post" action="<?php echo $target_link; ?>" target="_top">
+           	<label>Buscar:</label>
+            <input name="textoBusqueda" type="text" id="textoBusqueda" />
+            <input name="button" type="submit" id="button" value="Buscar" />           
+          </form>
+         </div>

@@ -1,0 +1,77 @@
+
+      
+      <section>
+        
+        <?php // print_r($discosArray); ?>
+        <h2>Carrito de Compras</h2>
+
+        <!-- CARRITO DETALLE -->
+        <div class="contenedorBordes">
+                <center><p><span class="boldspan"><?php echo $_SESSION['loggedUser']['nombreCliente']; ?></span></p></center>
+        	<div id="centraCarrito">
+        	        
+                        <img src="images/shopping-cart.png">	
+        	</div>
+        	<div id="estadoCarrito">
+        		<p>Productos en la <br />canasta: <span class="boldspan"><?php echo  $_SESSION['cantidadProductosTotal']; ?></span></p>
+        		<div class="centrarBotones">
+                                <form id="formaVerCarritoCompra" name="formaVerCarritoCompra" method="post" action="<?php echo $target_link4; ?>">
+                                        <input name="btnDetalles" type="submit" id="button" value="Ver Detalles" />
+                                </form>        
+        		<p>o</p>
+                                <form id="formaTerminarCompra" name="formaTerminarCompra" method="post" action="<?php echo $target_link3; ?>" target="_top">
+                                        <input type="hidden" name="accion" id="accion" value="finalizarCompra" />
+                                        <input name="btnProcesarPedido" type="submit" id="btnFinalizarCompra" value="Terminar Compra" />
+                                </form>
+                  <?php if (isset($_SESSION['loggedUser'])) { ?>
+                                <form id="formaCerrarSesionCliente" name="formaCerrarSesionCliente" method="post" action="<?php echo $target_link5; ?>">       
+                                        <input name="btnCerrarSesion" type="submit" id="button" value="Cerrar Sesion" />
+                                </form>        
+                  <?php } ?>                
+        	        </div> 
+
+                </div>
+        </div>        
+        <!-- CIERRE DE CARRITO DETALLE -->
+
+  <?php if (!isset($_SESSION['loggedUser'])) { ?>
+        <h2>Iniciar Sesión</h2>
+
+        <!-- LOGIN CLIENTE -->
+        <div class="contenedorBordes">
+                <form id="formIniciarSesion" action="<?php echo $target_link9; ?>" method="POST">
+                        <div class="centraForma">
+                                <p>Ingresa tu Nombre de Usuario y contrase&ntilde;a para Iniciar Sesión en la Tienda</p><br />
+                                <label>Usuario</label><br />
+                                <input type="text" size="15" name="username"><br />
+                                <label>Contrase&ntilde;a</label><br />
+                                <input type="password" size="15" name="password"><b />
+                                <input name="llamadaLogin" type="hidden" id="llamadaLogin" value="index" />
+                                <input name="submit" type="submit" value="Iniciar Sesión">
+                        </div>  
+                </form>
+        </div>
+  <?php } 
+
+        if (isset($_SESSION['errCorreoe'])) {
+                $errCorreoe = $_SESSION['errCorreoe'];
+                unset($_SESSION['errCorreoe']);        
+        } ?>      
+
+        
+        <h2>Boletín de Noticias</h2>
+        <!-- LOGIN CLIENTE -->
+        <div class="contenedorBordes">
+                <form id="formaRegistroBoletin" action="<?php echo $target_link15; ?>" method="POST">
+                        <div class="centraForma">
+                                <p>Registrate para recibir nuestro Boletin de Noticias Mensual</p><br 7>
+                                <label>Correo Electrónico</label><br />
+                                <input type="text" size="15" name="correoe" value="<?php echo $errCorreoe; ?>" ><br />
+                                <input name="submit" type="submit" value="Registro">
+                        </div>  
+                </form>
+        </div>
+
+      </section>
+      <!-- CIERRE LOGIN CLIENTE -->
+
